@@ -1,6 +1,7 @@
 # Shopee X Acommerce
 
-Example repositories how to integrate between [Shopee API](https://partner.shopeemobile.com) and [Acommerce API](https://acommerce.atlassian.net/wiki/spaces/PA/pages). Api Mock is using [mockable.io](mockable.io).
+Example repositories how to integrate between [Shopee API](https://partner.shopeemobile.com) and [Acommerce API](https://acommerce.atlassian.net/wiki/spaces/PA/pages).
+Api Mock is using [mockable.io](https://www.mockable.io/).
 
 ## Installation
 
@@ -40,7 +41,7 @@ Change necessary value at `src/settings.py`.
 ```
 $> python shopeexacommerce.py
 ```
-The script will return dictionary which has :
+The script will return dictionary which has key and value:
 - code : `201`
 - data : `Python Dict`
 
