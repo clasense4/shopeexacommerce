@@ -1,4 +1,4 @@
-PROJECT_DIR='~/Projects/python/acm'
+PROJECT_DIR='~/shopeexacommerce'
 PROJECT_TOKEN_FILE='token.txt'
 
 SHOPEE_PARTNER_ID='123'

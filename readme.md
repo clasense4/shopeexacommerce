@@ -11,13 +11,23 @@ Make sure you have this requirement :
 - Virtualenvwrapper (optional)
 
 ```shell
+mkdir ~/Envs
+
+which python
+
+# Make sure python interpreter is correct
 virtualenv -p /usr/local/bin/python2.7 ~/Envs/shopeexacommerce
+
 # If virtualenvwrapper is installed
 workon shopeexacommerce
 
 # If virtualenvwrapper not installed
 source ~/Envs/shopeexacommerce/bin/activate
 
+# Clone repository
+cd ~
+git clone git@github.com:clasense4/shopeexacommerce.git
+cd shopeexacommerce
 pip install -r requirements.txt
 ```
 
@@ -35,6 +45,12 @@ The script will return dictionary which has :
 - data : `Python Dict`
 
 ## Test
+
+### Configuration
+
+Please change `src.settings.PROJECT_DIR` on line `10`, `22` and `51` at file `test_api_acommerce.py`,
+if your projects is different than `~/shopeexacommerce`. And don't forget to add `test`. For example
+`~/shopeexacommerce/test`.
 
 ### No Coverage
 

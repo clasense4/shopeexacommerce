@@ -7,7 +7,7 @@ import acommerce_create_order_payload
 
 class AcommerceApiTestCase(unittest.TestCase):
     def test_retrieve_token(self):
-        src.settings.PROJECT_DIR = '~/Projects/python/acm/test'
+        src.settings.PROJECT_DIR = '~/shopeexacommerce/test'
         src.settings.PROJECT_TOKEN_FILE = 'token.txt'
 
         acommerce_api = AcommerceApi()
@@ -19,7 +19,7 @@ class AcommerceApiTestCase(unittest.TestCase):
         subprocess.check_output('rm -rf ' + src.settings.PROJECT_TOKEN_FILE, shell=True)
 
     def test_broken_token(self):
-        src.settings.PROJECT_DIR = '~/Projects/python/acm/test'
+        src.settings.PROJECT_DIR = '~/shopeexacommerce/test'
         src.settings.PROJECT_TOKEN_FILE = 'broken_token.txt'
 
         subprocess.check_output('cd ' + src.settings.PROJECT_DIR, shell=True)
@@ -48,7 +48,7 @@ class AcommerceApiTestCase(unittest.TestCase):
         subprocess.check_output('rm -rf ' + src.settings.PROJECT_TOKEN_FILE, shell=True)
 
     def test_token_expired(self):
-        src.settings.PROJECT_DIR = '~/Projects/python/acm/test'
+        src.settings.PROJECT_DIR = '~/shopeexacommerce/test'
         src.settings.PROJECT_TOKEN_FILE = 'expired_token.txt'
 
         subprocess.check_output('cd ' + src.settings.PROJECT_DIR, shell=True)
