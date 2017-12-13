@@ -3,13 +3,14 @@
 Example repositories how to integrate between [Shopee API](https://partner.shopeemobile.com) and [Acommerce API](https://acommerce.atlassian.net/wiki/spaces/PA/pages).
 Api Mock is using [mockable.io](https://www.mockable.io/).
 
-## Installation
-
-Make sure you have this requirement :
+## Requirements
 
 - Python 2.7.14
 - Virtualenv
 - Virtualenvwrapper (optional)
+- [Linux Server](https://www.digitalocean.com/?refcode=6b1c3b315e1e)
+
+## Installation
 
 ```shell
 mkdir ~/Envs
